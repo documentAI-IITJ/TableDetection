@@ -1,0 +1,9 @@
+path: /storage/anik/docai/208/dataset/rapidAI_yolo
+train: train/images  # train images
+val: test/images  # val images
+
+# Classes
+names:
+  0: Table
+  
+
