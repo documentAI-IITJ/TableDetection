@@ -13,29 +13,46 @@ import os # for handling the directory
 import shutil
 import json
 import tqdm
+import fire
 
 from ultralytics import YOLO
 
 
-checkpoint = "weights/best.pt"
-yolo = YOLO(checkpoint)
-results = yolo.train(data='doclaynet_large.yaml', 
-                    epochs=300, 
-                    device=[2, 3, 4],
-                    batch = 210,
-                    optimizer = 'AdamW',
-                    seed = 42,
-                    profile = True,
-                    plots = True,
-                    dropout=0.2,
-                    patience = 20,
-                     # name = "epochs200_batch_128"
 
-        )
-valid_results = yolo.val(save_json=True,
-                         device=[2, 3, 4],
-                         batch=210,
-                         conf=0.25,
-                         plots=True,
-                         )
-print("*****************************Validation Results******************************")
+yolo = YOLO('yolov8n.pt')
+def train_and_val(yaml_file, epochs, devices, batch):
+        """
+        This script provides a function `train_and_val` for training and validating a YOLOv8 model using the Ultralytics YOLO package.
+        
+        Args:
+                yaml_file (str): Path to the YAML configuration file that specifies the dataset and training parameters.
+                epochs (int): Number of epochs to train the model.
+                devices (str): Device(s) to use for training (e.g., "[0]" for a single GPU, "[0,1]" for multiple GPUs, or "cpu" for CPU).
+                batch (int): Batch size to be used during training.
+        
+        Usage:
+                python main.py --yaml_file train.yaml --epochs 20 --devices [1] --batch 128
+
+        """
+        results = yolo.train(data=yaml_file, 
+                        epochs=epochs, 
+                        device=devices,
+                        batch = batch,
+                        optimizer = 'AdamW',
+                        seed = 42,
+                        profile = True,
+                        plots = True,
+                        dropout=0.2
+                        # name = "epochs200_batch_128"
+
+                )
+        valid_results = yolo.val(save_json=True,
+                                device=devices,
+                                batch=batch,)
+
+
+if __name__ == "__main__":
+    fire.Fire(train_and_val)
+
+## Usage
+## python main.py --yaml_file train.yaml --epochs 20 --devices [1] --batch 128

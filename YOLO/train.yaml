@@ -1,0 +1,9 @@
+path: /storage/anik/docai/208/scripts/yolo_rapidAI_headerFooter/data
+train: train/images  # train images
+val: test/images  # val images
+
+# Classes
+names:
+  0: Footer
+  1: Header
+
