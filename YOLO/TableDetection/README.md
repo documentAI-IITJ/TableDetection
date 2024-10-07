@@ -1,6 +1,6 @@
 # YOLO RapidAI Table Detection
 
-This repository contains scripts and resources for converting annotation data from JSON format to YOLO format, training a YOLO model for header and footer detection, and visualizing the ground truth annotations.
+<!-- This repository contains scripts and resources for converting annotation data from JSON format to YOLO format, training a YOLO model for header and footer detection, and visualizing the ground truth annotations. -->
 <!-- 
 ## Directory Structure
 
