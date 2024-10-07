@@ -21,6 +21,7 @@ yolo_rapidAI_headerFooter/
 
 Create a virtual environment with python >= 3.9 and install the following python packages.
 ```
+pip install ultralytics
 pip install opencv-python
 pip install pillow
 pip install matplotlib
