@@ -54,6 +54,7 @@ python predict.py --image_dir "/path/to/images" --model_path "/path/to/model" --
 
 ```
 
+Use the model trained on Doclaynet and some proprietary data available [here](https://github.com/documentAI-IITJ/TableDetection/releases/download/v1/yolo_table_best.pt)
 
 <!-- ## Training the YOLO Model
 To train the YOLO model using the converted data, use the ```main.py``` script.
