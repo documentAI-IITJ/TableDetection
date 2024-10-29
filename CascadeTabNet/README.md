@@ -1,4 +1,4 @@
-# table-detection
+# Table Detection
 ## Installation 
 As recommended from mmdetection, [prerequisites](https://mmdetection.readthedocs.io/en/stable/get_started.html#prerequisites), [installation](https://mmdetection.readthedocs.io/en/stable/get_started.html#installation)
 
