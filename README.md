@@ -7,7 +7,7 @@ These table detection modules can be used to detect tables in various kinds of d
 3. CascadeTabNet
 
 ## Training Dataset
-Doclaynet - a human-annotated document layout segmentation dataset containing 80863 pages from a broad variety of document sources was used to train and test.
+[Doclaynet](https://github.com/DS4SD/DocLayNet) - a human-annotated document layout segmentation dataset containing 80863 pages from a broad variety of document sources was used to train and test.
 Models were regressively tested on complex medical data (proprietary data) as well.
 
 ## Acknowledgments
