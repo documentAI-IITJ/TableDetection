@@ -1,4 +1,4 @@
-<h1 align="center">📄 Table Detection Modules</h1> 
+<h1 align="center"> Table Detection Modules</h1> 
 <p align="center">A collection of table detection modules designed to accurately detect tables across various document types, such as invoices, scientific papers, and other complex layouts.</p>
 
 
