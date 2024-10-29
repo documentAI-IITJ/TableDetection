@@ -24,3 +24,4 @@ Special thanks to the following resources and frameworks that have significantly
 ## Contact
 For questions, feedback, or collaboration opportunities, please feel free to reach out:
 - [Anik De](mailto:anekde@gmail.com)
+- [Ritu Singh](mailto:m23cse017@iitj.ac.in)
