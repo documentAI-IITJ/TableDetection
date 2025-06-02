@@ -1,0 +1,11 @@
+{
+    "tab2tex-dataset": {
+      "root": "/scratch/data/tab2tex/tablev1.2/images/square",
+      "annotation": "/scratch/data/tab2tex/train_dataset_Image_row_col_latex_FAT_CoTv2.jsonl",
+      "data_augment": false, 
+      "max_dynamic_patch": 6, 
+      "repeat_time": 1, 
+      "length": 13138
+    }
+  }
+  
